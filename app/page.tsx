@@ -1,9 +1,7 @@
-import { ThemeSwitcher } from "@/components/switchers/theme-switcher";
+type HomePageProps = {};
 
-export default function Home() {
-	return (
-		<section>
-			<ThemeSwitcher />
-		</section>
-	);
-}
+const HomePage = ({}: HomePageProps) => {
+	return <section>Home page</section>;
+};
+
+export default HomePage;
