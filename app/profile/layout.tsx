@@ -7,9 +7,11 @@ import { ExamplesNavigation } from "@/components/navigations/examples-navigation
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-type ProfileLayoutProps = React.HTMLAttributes<HTMLDivElement> & {};
+type ProfileLayoutProps = {
+	children: React.ReactNode;
+};
 
-const ProfileLayout = ({ className, children, ...props }: ProfileLayoutProps) => {
+const ProfileLayout = ({ children }: ProfileLayoutProps) => {
 	return (
 		<section className="relative container">
 			{/* SECTION :: PAGE HEADER */}
