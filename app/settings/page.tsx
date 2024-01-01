@@ -1,7 +1,7 @@
 type SettingsPageProps = {};
 
 const SettingsPage = ({}: SettingsPageProps) => {
-	return <section>Settings Page</section>;
+	return <section className="relative container pt-8">Settings Page</section>;
 };
 
 export default SettingsPage;

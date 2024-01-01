@@ -1,23 +1,22 @@
 import { GithubIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 
-import { Timeline } from "@/app/profile/components/timeline";
 import { Announcement } from "@/components/announcements/announcement";
 import { PageActions, PageHeader, PageHeaderDescription, PageHeaderHeading } from "@/components/headings/page-header";
 import { ExamplesNavigation } from "@/components/navigations/examples-navigation";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-type HomePageProps = {};
+type ProfileLayoutProps = React.HTMLAttributes<HTMLDivElement> & {};
 
-const HomePage = ({}: HomePageProps) => {
+const ProfileLayout = ({ className, children, ...props }: ProfileLayoutProps) => {
 	return (
 		<section className="relative container">
 			{/* SECTION :: PAGE HEADER */}
 			<PageHeader>
 				<Announcement
-					href="/profile/experience"
-					announcement="Open to work, see my profile"
+					href="/"
+					announcement="Open to work"
 					announcementMobile="Open to work"
 				/>
 				<PageHeaderHeading>Jiranop Phinyo</PageHeaderHeading>
@@ -45,14 +44,10 @@ const HomePage = ({}: HomePageProps) => {
 			{/* SECTION :: EXAMPLES NAVIGATION */}
 			<ExamplesNavigation />
 
-			{/* SECTION :: FEATURES APPLICATION */}
-			<section>
-				<div className="pb-8">
-					<Timeline />
-				</div>
-			</section>
+			{/* SECTION :: PROFILES */}
+			<div className="overflow-hidden pb-8">{children}</div>
 		</section>
 	);
 };
 
-export default HomePage;
+export default ProfileLayout;

@@ -11,45 +11,37 @@ type ExamplesNavigationProps = React.HTMLAttributes<HTMLDivElement> & {};
 const examples = [
 	{
 		name: "Experience",
-		href: "/examples/mail",
-		code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/mail",
+		href: "/profile/experience",
 	},
 	{
 		name: "Education",
-		href: "/examples/playground",
-		code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/playground",
+		href: "/profile/education",
 	},
-	{
-		name: "Dashboard",
-		href: "/examples/dashboard",
-		code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/dashboard",
-	},
-	{
-		name: "Cards",
-		href: "/examples/cards",
-		code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/cards",
-	},
-	{
-		name: "Tasks",
-		href: "/examples/tasks",
-		code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/tasks",
-	},
+	// {
+	// 	name: "Dashboard",
+	// 	href: "/examples/dashboard",
+	// },
+	// {
+	// 	name: "Cards",
+	// 	href: "/examples/cards",
+	// },
+	// {
+	// 	name: "Tasks",
+	// 	href: "/examples/tasks",
+	// },
 
-	{
-		name: "Forms",
-		href: "/examples/forms",
-		code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/forms",
-	},
-	{
-		name: "Music",
-		href: "/examples/music",
-		code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/music",
-	},
-	{
-		name: "Authentication",
-		href: "/examples/authentication",
-		code: "https://github.com/shadcn/ui/tree/main/apps/www/app/examples/authentication",
-	},
+	// {
+	// 	name: "Forms",
+	// 	href: "/examples/forms",
+	// },
+	// {
+	// 	name: "Music",
+	// 	href: "/examples/music",
+	// },
+	// {
+	// 	name: "Authentication",
+	// 	href: "/examples/authentication",
+	// },
 ];
 
 const ExamplesNavigation = ({ className, ...props }: ExamplesNavigationProps) => {
