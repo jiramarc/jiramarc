@@ -14,7 +14,7 @@ const StackedLayout = ({ className, children, ...props }: StackedLayoutProps) =>
 			{...props}>
 			<SiteHeader />
 
-			<main className="flex-1 bg-muted">{children}</main>
+			<main className="flex-1">{children}</main>
 
 			<SiteFooter />
 		</div>
