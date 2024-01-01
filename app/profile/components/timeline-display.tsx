@@ -1,7 +1,6 @@
 "use client";
 
 import { format, formatDistance } from "date-fns";
-import Balancer from "react-wrap-balancer";
 
 import { Timeline } from "@/app/profile/data";
 import { useTimeline } from "@/app/profile/use-timeline";
@@ -40,7 +39,7 @@ const TimelineDisplay = ({ item }: TimelineDisplayProps) => {
 					<Separator className="mt-auto" />
 
 					<div className="flex-1 whitespace-pre-wrap p-4 text-sm space-y-6">
-						<Balancer>{item.description}</Balancer>
+						<div>{item.description}</div>
 						<ul>
 							{item.responsibilities.map((responsibility, index) => (
 								<li

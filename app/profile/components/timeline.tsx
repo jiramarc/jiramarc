@@ -11,9 +11,11 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-type TimelineProps = {};
+type TimelineProps = {
+	defaultValue?: "all" | "experience" | "education";
+};
 
-const Timeline = (props: TimelineProps) => {
+const Timeline = ({ defaultValue = "all" }: TimelineProps) => {
 	const timeline = useTimeline();
 	const [search, setSearch] = React.useState("");
 	const filterdTimelines = timelines.filter((item) => item.title.trim().toLowerCase().includes(search.trim().toLowerCase()));
@@ -22,7 +24,7 @@ const Timeline = (props: TimelineProps) => {
 		<div className="flex flex-col lg:flex-row rounded-lg border bg-background shadow-lg">
 			{/* PROFILE :: LIST */}
 			<Tabs
-				defaultValue="all"
+				defaultValue={defaultValue}
 				className="md:border-r">
 				<div className="flex items-center gap-6 px-4 py-2">
 					<h1 className="text-xl font-bold">Timeline</h1>
