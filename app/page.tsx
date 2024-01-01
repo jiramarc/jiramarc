@@ -1,8 +1,7 @@
 import { GithubIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 
-import ProfilePage from "@/app/profile/page";
-
+import { Timeline } from "@/app/profile/components/timeline";
 import { Announcement } from "@/components/announcements/announcement";
 import { PageActions, PageHeader, PageHeaderDescription, PageHeaderHeading } from "@/components/headings/page-header";
 import { ExamplesNavigation } from "@/components/navigations/examples-navigation";
@@ -13,7 +12,7 @@ type HomePageProps = {};
 
 const HomePage = ({}: HomePageProps) => {
 	return (
-		<div className="relative container">
+		<section className="relative container">
 			{/* SECTION :: PAGE HEADER */}
 			<PageHeader>
 				<Announcement
@@ -48,11 +47,11 @@ const HomePage = ({}: HomePageProps) => {
 
 			{/* SECTION :: FEATURES APPLICATION */}
 			<section>
-				<div className="overflow-hidden rounded-lg border bg-background shadow-lg">
-					<ProfilePage />
+				<div className="pb-8">
+					<Timeline />
 				</div>
 			</section>
-		</div>
+		</section>
 	);
 };
 
