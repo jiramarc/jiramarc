@@ -2,6 +2,9 @@ import { AppWindowIcon, BookTextIcon, DownloadIcon, GitCommitVerticalIcon, Githu
 
 export const siteConfig = {
 	name: "Jiramarc",
+	url: "https://jiramarc.vercel.app",
+	description: "Full-Stack Software Engineer",
+	keywords: ["Jiranop", "Jiranop Phinyo", "Jiramarc", "Full-Stack Software Engineer", "Full-Stack Web Developer", "Next.js", "React", "Tailwind CSS"],
 	socials: [
 		{
 			title: "LinkedIn",
@@ -32,14 +35,14 @@ export const siteConfig = {
 		top: [
 			{ title: "Profile", href: "/profile/experience", icon: User2Icon, hidden: false },
 			{ title: "Components", href: "/components", icon: PackageIcon, hidden: false },
-			{ title: "Examples", href: "/examples", icon: AppWindowIcon, hidden: false },
+			{ title: "Examples", href: "/examples/cards", icon: AppWindowIcon, hidden: false },
 			{ title: "Github", href: "https://github.com/jiramarc", icon: GithubIcon, hidden: true, target: "_blank" },
 		],
 		bottom: [
 			{ title: "Profile", href: "/profile/experience", icon: User2Icon },
 			{ title: "UI", href: "/components", icon: PackageIcon },
 			{ title: "Home", href: "/", icon: HomeIcon },
-			{ title: "Examples", href: "/examples", icon: AppWindowIcon },
+			{ title: "Examples", href: "/examples/cards", icon: AppWindowIcon },
 			{ title: "GitHub", href: "https://github.com/jiramarc", icon: GithubIcon },
 		],
 		left: [

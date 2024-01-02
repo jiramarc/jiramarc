@@ -21,10 +21,10 @@ const examples = [
 	// 	name: "Dashboard",
 	// 	href: "/examples/dashboard",
 	// },
-	// {
-	// 	name: "Cards",
-	// 	href: "/examples/cards",
-	// },
+	{
+		name: "Cards",
+		href: "/examples/cards",
+	},
 	// {
 	// 	name: "Tasks",
 	// 	href: "/examples/tasks",
