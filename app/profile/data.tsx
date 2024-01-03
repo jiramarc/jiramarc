@@ -58,7 +58,7 @@ export const timelines = [
 		skills: ["Food Science and Technology"],
 	},
 	{
-		id: "8f7b5db9-d935-4e42-8e05-1f1d0a3dfb97",
+		id: "8f7b5db9-d935-4e42-8e05-1f1d0a3dfb96",
 		type: "education",
 		title: "Math & Science",
 		organization: "Watsuthiwararam School",

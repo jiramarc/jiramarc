@@ -35,14 +35,14 @@ export const siteConfig = {
 		top: [
 			{ title: "Profile", href: "/profile/experience", icon: User2Icon, hidden: false },
 			{ title: "Components", href: "/components", icon: PackageIcon, hidden: false },
-			{ title: "Examples", href: "/examples/cards", icon: AppWindowIcon, hidden: false },
+			{ title: "Examples", href: "/examples/dashboard", icon: AppWindowIcon, hidden: false },
 			{ title: "Github", href: "https://github.com/jiramarc", icon: GithubIcon, hidden: true, target: "_blank" },
 		],
 		bottom: [
 			{ title: "Profile", href: "/profile/experience", icon: User2Icon },
 			{ title: "UI", href: "/components", icon: PackageIcon },
 			{ title: "Home", href: "/", icon: HomeIcon },
-			{ title: "Examples", href: "/examples/cards", icon: AppWindowIcon },
+			{ title: "Examples", href: "/examples/dashboard", icon: AppWindowIcon },
 			{ title: "GitHub", href: "https://github.com/jiramarc", icon: GithubIcon },
 		],
 		left: [

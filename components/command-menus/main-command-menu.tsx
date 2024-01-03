@@ -9,9 +9,9 @@ import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, C
 import { siteConfig } from "@/config/site-config";
 import { cn } from "@/lib/utils";
 
-type MainCommandMenuProps = {};
+type MainCommandMenuProps = React.HTMLAttributes<HTMLElement> & {};
 
-const MainCommandMenu = ({}: MainCommandMenuProps) => {
+const MainCommandMenu = ({ className }: MainCommandMenuProps) => {
 	const [mainCommandMenuIsOpen, setMainCommandMenuIsOpen] = React.useState<boolean>(false);
 	const router = useRouter();
 	const { setTheme } = useTheme();
@@ -36,7 +36,7 @@ const MainCommandMenu = ({}: MainCommandMenuProps) => {
 	return (
 		<React.Fragment>
 			<Button
-				className={cn("relative h-8 w-full justify-start rounded-md bg-background text-sm font-normal text-muted-foreground shadow-none sm:pr-12 md:w-40 lg:w-64")}
+				className={cn("relative h-8 w-full justify-start rounded-md bg-background text-sm font-normal text-muted-foreground shadow-none sm:pr-12 md:w-40 lg:w-64", className)}
 				variant="outline"
 				onClick={() => setMainCommandMenuIsOpen(true)}>
 				<span className="hidden lg:inline-flex">Search documentation...</span>
