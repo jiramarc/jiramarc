@@ -17,10 +17,10 @@ const examples = [
 		name: "Education",
 		href: "/profile/education",
 	},
-	// {
-	// 	name: "Dashboard",
-	// 	href: "/examples/dashboard",
-	// },
+	{
+		name: "Dashboard",
+		href: "/examples/dashboard",
+	},
 	{
 		name: "Cards",
 		href: "/examples/cards",

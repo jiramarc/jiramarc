@@ -25,7 +25,7 @@ const Timeline = ({ defaultValue = "all" }: TimelineProps) => {
 			{/* PROFILE :: LIST */}
 			<Tabs
 				defaultValue={defaultValue}
-				className="md:border-r">
+				className="lg:border-r">
 				<div className="flex items-center gap-6 px-4 py-2">
 					<h1 className="text-xl font-bold">Timeline</h1>
 					<TabsList className="ml-auto">

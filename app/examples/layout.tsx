@@ -27,23 +27,23 @@ const ExamplesLayout = ({ children }: ExamplesLayoutProps) => {
 			<PageHeader>
 				<PageHeaderHeading>Checkout some exaples</PageHeaderHeading>
 				<PageHeaderDescription>Dashboard, Cards, Authentication. Some examples built using the components. Use this as a guide to build your own.</PageHeaderDescription>
+				<PageActions>
+					<Link
+						href="/examples/cards"
+						target="_blank"
+						rel="noopener noreferrer"
+						className={cn("", buttonVariants())}>
+						Get Started
+					</Link>
+					<Link
+						href="/components"
+						target="_blank"
+						rel="noopener noreferrer"
+						className={cn("", buttonVariants({ variant: "outline" }))}>
+						Components
+					</Link>
+				</PageActions>
 			</PageHeader>
-			<PageActions>
-				<Link
-					href="/examples/cards"
-					target="_blank"
-					rel="noopener noreferrer"
-					className={cn("", buttonVariants())}>
-					Get Started
-				</Link>
-				<Link
-					href="/components"
-					target="_blank"
-					rel="noopener noreferrer"
-					className={cn("", buttonVariants({ variant: "outline" }))}>
-					Comppnents
-				</Link>
-			</PageActions>
 
 			{/* SECTION :: EXAMPLES NAVIGATION */}
 			<ExamplesNavigation />
