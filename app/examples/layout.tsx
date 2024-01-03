@@ -25,7 +25,7 @@ const ExamplesLayout = ({ children }: ExamplesLayoutProps) => {
 		<section className="relative container">
 			{/* SECTION :: PAGE HEADER */}
 			<PageHeader>
-				<PageHeaderHeading>Checkout some exaples</PageHeaderHeading>
+				<PageHeaderHeading>Checkout some examples</PageHeaderHeading>
 				<PageHeaderDescription>Dashboard, Cards, Authentication. Some examples built using the components. Use this as a guide to build your own.</PageHeaderDescription>
 				<PageActions>
 					<Link
