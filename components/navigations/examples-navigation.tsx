@@ -25,10 +25,10 @@ const examples = [
 		name: "Cards",
 		href: "/examples/cards",
 	},
-	// {
-	// 	name: "Tasks",
-	// 	href: "/examples/tasks",
-	// },
+	{
+		name: "Data Table",
+		href: "/examples/data-table",
+	},
 
 	// {
 	// 	name: "Forms",
@@ -59,7 +59,7 @@ const ExamplesNavigation = ({ className, ...props }: ExamplesNavigationProps) =>
 							href={example.href}
 							className={cn(
 								//
-								"flex items-center justify-center text-center text-sm transition-colors hover:text-primary rounded-full px-4 h-7",
+								"flex items-center justify-center text-center text-sm transition-colors hover:text-primary rounded-full px-4 h-7 whitespace-nowrap",
 								pathname?.startsWith(example.href) || (index === 0 && pathname === "/") ? "bg-muted font-medium text-primary" : "text-muted-foreground"
 							)}>
 							{example.name}
