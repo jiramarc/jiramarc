@@ -23,6 +23,7 @@ type ExampleDashboardPageProps = {};
 const ExampleDashboardPage = ({}: ExampleDashboardPageProps) => {
 	return (
 		<section className="border rounded-lg">
+			{/* NAVIGATION BAR */}
 			<div className="flex flex-col">
 				<div className="flex flex-row items-center justify-between h-16 px-4 border-b gap-4">
 					<div className="flex flex-1 space-x-4">

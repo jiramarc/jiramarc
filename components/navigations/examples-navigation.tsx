@@ -29,7 +29,10 @@ const examples = [
 		name: "Data Table",
 		href: "/examples/data-table",
 	},
-
+	{
+		name: "E-commerce",
+		href: "/examples/e-commerce",
+	},
 	// {
 	// 	name: "Forms",
 	// 	href: "/examples/forms",
@@ -49,7 +52,7 @@ const ExamplesNavigation = ({ className, ...props }: ExamplesNavigationProps) =>
 
 	return (
 		<div className="relative">
-			<ScrollArea className="max-w-xl lg:max-w-none">
+			<ScrollArea className="max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-none">
 				<div
 					className={cn("flex items-center mb-4", className)}
 					{...props}>
